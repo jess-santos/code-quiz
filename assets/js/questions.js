@@ -6,7 +6,8 @@ export const quizQuestions = [
             "int",
             "string",
             "const"
-        ]
+        ],
+        correctAnswer: 0
     },
     {
         question: "Which of the following is NOT a JavaScript data type?",
@@ -15,7 +16,8 @@ export const quizQuestions = [
             "boolean",
             "string",
             "float"
-        ]
+        ],
+        correctAnswer: 3
     },
     {
         question: "What symbol is used to represent comments in JavaScript?",
@@ -24,7 +26,8 @@ export const quizQuestions = [
             "--",
             "#",
             "/* */"
-        ]
+        ],
+        correctAnswer: 0
     },
     {
         question: "Which method is used to output data to the console in JavaScript?",
@@ -33,7 +36,8 @@ export const quizQuestions = [
             "print()",
             "display()",
             "echo()"
-        ]
+        ],
+        correctAnswer: 0
     },
     {
         question: "What is the result of the expression `3 + '3'` in JavaScript?",
@@ -42,7 +46,8 @@ export const quizQuestions = [
             "'33'",
             "33",
             "Error"
-        ]
+        ],
+        correctAnswer: 1
     },
     {
         question: "Which of the following is used to compare two values for equality in JavaScript?",
@@ -51,7 +56,8 @@ export const quizQuestions = [
             "===",
             "=",
             "!="
-        ]
+        ],
+        correctAnswer: 1
     },
     {
         question: "What function is used to convert a string to a number in JavaScript?",
@@ -60,6 +66,7 @@ export const quizQuestions = [
             "parseFloat()",
             "toNumber()",
             "castToInt()"
-        ]
+        ],
+        correctAnswer: 0
     }
 ];
