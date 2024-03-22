@@ -34,4 +34,14 @@ function startQuiz() {
     });
     startTimer();
 
+    function startTimer() {
+        timerInterval = setInterval(function() {
+           timeLeft--;
+           timer.textContent = timeLeft;
+           if (timeLeft <= 0) {
+             endQuiz();
+           }
+        }, 1000);
+       }
+       
 
