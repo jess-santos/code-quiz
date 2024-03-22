@@ -66,4 +66,9 @@ function startQuiz() {
         }
        }
        
-
+       function endQuiz() {
+        clearInterval(timerInterval);
+        endScreen.classList.remove("hide");
+       }
+       
+       startButton.addEventListener("click", startQuiz);
