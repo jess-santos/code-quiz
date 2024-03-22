@@ -1,4 +1,5 @@
-const quizQuestions = [
+// questions.js
+export const quizQuestions = [
     {
         question: "what is the question one?",
 
