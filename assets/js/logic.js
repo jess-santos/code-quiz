@@ -69,13 +69,33 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+    function saveHighScore(initials, score) {
+        highScores.push({ initials, score });
+        // Sort high scores in descending order
+        highScores.sort((a, b) => b.score - a.score);
+        // Save high scores to local storage
+        localStorage.setItem('highScores', JSON.stringify(highScores));
+    }
+
     function endQuiz() {
         clearInterval(timerInterval);
+        // Calculate final score
         const finalScoreDisplay = document.querySelector("#final-score");
         finalScoreDisplay.textContent = score;
-        const questionsDiv = document.querySelector("#questions");
-        questionsDiv.classList.add("hide");
+        // Show the end screen
+        const endScreen = document.querySelector("#end-screen");
         endScreen.classList.remove("hide");
+        // Save high score
+        const initialsInput = document.querySelector("#initials").value;
+        console.log("Initials:", initialsInput);
+        console.log("Score:", score);
+        saveHighScore(initialsInput, score);
     }
 });
+
+
+
+
 
