@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const initialsInput = document.querySelector("#initials");
     const submitButton = document.querySelector("#submit");
 
-    let timeLeft = 30;
+    let timeLeft = 70;
     let timerInterval;
     let currentQuestionIndex = 0;
     let score = 0;
@@ -56,8 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (answerIndex === currentQuestion.correctAnswer) {
             score += 10;
         } else {
+            timeLeft -= 10;
+            if (timeLeft < 0) {
+                timeLeft = 0;
+            }
         }
-
+    
         currentQuestionIndex++;
         if (currentQuestionIndex < quizQuestions.length) {
             displayQuestion();
