@@ -9,7 +9,7 @@ var timer = document.querySelector("#time");
 var highScoresList = document.querySelector("#high-scores-list");
 var questions = [
  // Add questions here in the format: 
- // {question: "Question text", 
+ //{question: "Question text", 
  //answers: ["Answer 1", "Answer 2", ...], 
  //correctAnswer: "Correct Answer"}
 ];
@@ -33,6 +33,7 @@ function startQuiz() {
       choices.appendChild(button);
     });
     startTimer();
+}
 
     function startTimer() {
         timerInterval = setInterval(function() {
@@ -42,6 +43,27 @@ function startQuiz() {
              endQuiz();
            }
         }, 1000);
+       }
+       
+       function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+           question.textContent = questions[currentQuestionIndex].question;
+           choices.innerHTML = "";
+           questions[currentQuestionIndex].answers.forEach(function(answer, index) {
+             var button = document.createElement("button");
+             button.textContent = answer;
+             button.addEventListener("click", function() {
+               if (answer === questions[currentQuestionIndex].correctAnswer) {
+               } else {
+               }
+               nextQuestion();
+             });
+             choices.appendChild(button);
+           });
+        } else {
+           endQuiz();
+        }
        }
        
 
