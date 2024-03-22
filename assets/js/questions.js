@@ -1,86 +1,65 @@
 export const quizQuestions = [
     {
-        question: "what is the question one?",
-
+        question: "What keyword is used to declare a variable in JavaScript?",
         answers: [
-            "example one",
-            "example two",
-            "example three"
-        ],
-
-        correctAnswer: 1
+            "var",
+            "int",
+            "string",
+            "const"
+        ]
     },
-
     {
-        question: "what is the question two?",
-
+        question: "Which of the following is NOT a JavaScript data type?",
         answers: [
-            "example one",
-            "example two",
-            "example three"
-        ],
-
-        correctAnswer: 2
+            "number",
+            "boolean",
+            "string",
+            "float"
+        ]
     },
-
     {
-        question: "what is the question three?",
-
+        question: "What symbol is used to represent comments in JavaScript?",
         answers: [
-            "example one",
-            "example two",
-            "example three"
-        ],
-
-        correctAnswer: 3
+            "//",
+            "--",
+            "#",
+            "/* */"
+        ]
     },
-
     {
-        question: "what is the question four?",
-
+        question: "Which method is used to output data to the console in JavaScript?",
         answers: [
-            "example one",
-            "example two",
-            "example three"
-        ],
-
-        correctAnswer: 1
+            "console.log()",
+            "print()",
+            "display()",
+            "echo()"
+        ]
     },
-
     {
-        question: "what is the question five?",
-
+        question: "What is the result of the expression `3 + '3'` in JavaScript?",
         answers: [
-            "example one",
-            "example two",
-            "example three"
-        ],
-
-        correctAnswer: 1
+            "6",
+            "'33'",
+            "33",
+            "Error"
+        ]
     },
-
     {
-        question: "what is the question six?",
-
+        question: "Which of the following is used to compare two values for equality in JavaScript?",
         answers: [
-            "example one",
-            "example two",
-            "example three"
-        ],
-
-        correctAnswer: 1
+            "==",
+            "===",
+            "=",
+            "!="
+        ]
     },
-
     {
-        question: "what is the question seven?",
-
+        question: "What function is used to convert a string to a number in JavaScript?",
         answers: [
-            "example one",
-            "example two",
-            "example three"
-        ],
-
-        correctAnswer: 1
-    },
-
-]
+            "parseInt()",
+            "parseFloat()",
+            "toNumber()",
+            "castToInt()"
+        ]
+    }
+];
