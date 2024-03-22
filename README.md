@@ -16,10 +16,21 @@ To access the deployed application head to
 ## Usage
 1. Access the quiz directly through the link provided in 'Installation'
 2. Click the "Start Quiz" button to begin.
+
+![screenshot](https://github.com/jess-santos/code-quiz/blob/main/assets/images/codequiz.png)
+
 3. Answer each question by clicking the corresponding button.
+
+![screenshot](https://github.com/jess-santos/code-quiz/blob/main/assets/images/answers.png)
+
 4. At the end of the quiz, enter your initials and click "Submit" to save your high score.
+
+![screenshot](https://github.com/jess-santos/code-quiz/blob/main/assets/images/finalscore.png)
+
 5. Click "View Highscores" to see the list of high scores.
 6. To clear high scores, click the "Clear Highscores" button on the high scores page.
+
+![screenshot](https://github.com/jess-santos/code-quiz/blob/main/assets/images/highscores.png)
 
 ## License
 N/A
