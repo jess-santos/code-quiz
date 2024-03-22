@@ -1,101 +1,86 @@
 export const quizQuestions = [
     {
-        question: "What is the capital of France?",
-        answers: ["Paris", "London", "Berlin", "Madrid"],
-        correctAnswer: 0 
+        question: "what is the question one?",
+
+        answers: [
+            "example one",
+            "example two",
+            "example three"
+        ],
+
+        correctAnswer: 1
     },
+
     {
-        question: "Which planet is known as the Red Planet?",
-        answers: ["Mars", "Venus", "Jupiter", "Saturn"],
-        correctAnswer: 0 
+        question: "what is the question two?",
+
+        answers: [
+            "example one",
+            "example two",
+            "example three"
+        ],
+
+        correctAnswer: 2
     },
-];
 
+    {
+        question: "what is the question three?",
 
+        answers: [
+            "example one",
+            "example two",
+            "example three"
+        ],
 
-// export const quizQuestions = [
-//     {
-//         question: "what is the question one?",
+        correctAnswer: 3
+    },
 
-//         answers: [
-//             "example one",
-//             "example two",
-//             "example three"
-//         ],
+    {
+        question: "what is the question four?",
 
-//         correctAnswer: 1
-//     },
+        answers: [
+            "example one",
+            "example two",
+            "example three"
+        ],
 
-//     {
-//         question: "what is the question two?",
+        correctAnswer: 1
+    },
 
-//         answers: [
-//             "example one",
-//             "example two",
-//             "example three"
-//         ],
+    {
+        question: "what is the question five?",
 
-//         correctAnswer: 2
-//     },
+        answers: [
+            "example one",
+            "example two",
+            "example three"
+        ],
 
-//     {
-//         question: "what is the question three?",
+        correctAnswer: 1
+    },
 
-//         answers: [
-//             "example one",
-//             "example two",
-//             "example three"
-//         ],
+    {
+        question: "what is the question six?",
 
-//         correctAnswer: 3
-//     },
+        answers: [
+            "example one",
+            "example two",
+            "example three"
+        ],
 
-//     {
-//         question: "what is the question four?",
+        correctAnswer: 1
+    },
 
-//         answers: [
-//             "example one",
-//             "example two",
-//             "example three"
-//         ],
+    {
+        question: "what is the question seven?",
 
-//         correctAnswer: 1
-//     },
+        answers: [
+            "example one",
+            "example two",
+            "example three"
+        ],
 
-//     {
-//         question: "what is the question five?",
+        correctAnswer: 1
+    },
 
-//         answers: [
-//             "example one",
-//             "example two",
-//             "example three"
-//         ],
-
-//         correctAnswer: 1
-//     },
-
-//     {
-//         question: "what is the question six?",
-
-//         answers: [
-//             "example one",
-//             "example two",
-//             "example three"
-//         ],
-
-//         correctAnswer: 1
-//     },
-
-//     {
-//         question: "what is the question seven?",
-
-//         answers: [
-//             "example one",
-//             "example two",
-//             "example three"
-//         ],
-
-//         correctAnswer: 1
-//     },
-
-// ]
+]

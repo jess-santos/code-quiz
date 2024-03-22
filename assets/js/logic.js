@@ -6,12 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const questionTitle = document.querySelector("#question-title");
     const choicesDiv = document.querySelector("#choices");
     const timer = document.querySelector("#time");
+    const endScreen = document.querySelector("#end-screen");
+    const initialsInput = document.querySelector("#initials");
+    const submitButton = document.querySelector("#submit");
+
     let timeLeft = 30;
     let timerInterval;
     let currentQuestionIndex = 0;
-    const endScreen = document.querySelector("#end-screen");
+    let score = 0;
 
     startButton.addEventListener("click", startQuiz);
+    submitButton.addEventListener("click", saveHighScore);
 
     function startQuiz() {
         startScreen.classList.add("hide");
@@ -46,19 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    let score = 0;
-
     function validateAnswer(answerIndex) {
         const currentQuestion = quizQuestions[currentQuestionIndex];
         if (answerIndex === currentQuestion.correctAnswer) {
-
             score += 10;
         } else {
-
-            timeLeft -= 10;
-            if (timeLeft <= 0) {
-                endQuiz();
-            }
         }
 
         currentQuestionIndex++;
@@ -71,31 +68,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
-    function saveHighScore(initials, score) {
-        highScores.push({ initials, score });
-        // Sort high scores in descending order
-        highScores.sort((a, b) => b.score - a.score);
-        // Save high scores to local storage
-        localStorage.setItem('highScores', JSON.stringify(highScores));
+    function saveHighScore() {
+        const initials = initialsInput.value.trim();
+        if (initials !== "") {
+            highScores.push({ initials, score });
+            highScores.sort((a, b) => b.score - a.score);
+            localStorage.setItem('highScores', JSON.stringify(highScores));
+            console.log("High score saved:", initials, score);
+        }
     }
 
     function endQuiz() {
         clearInterval(timerInterval);
-        // Calculate final score
         const finalScoreDisplay = document.querySelector("#final-score");
         finalScoreDisplay.textContent = score;
-        // Show the end screen
-        const endScreen = document.querySelector("#end-screen");
         endScreen.classList.remove("hide");
-        // Save high score
-        const initialsInput = document.querySelector("#initials").value;
-        console.log("Initials:", initialsInput);
-        console.log("Score:", score);
-        saveHighScore(initialsInput, score);
     }
 });
-
-
-
-
-
